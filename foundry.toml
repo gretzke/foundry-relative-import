@@ -9,6 +9,11 @@ solc = "0.8.23"
 verbosity = 2
 ffi = true
 
+fs_permissions = [
+  { access = "read", path = "lib/deployer-test/src/bin" },
+  { access = "read", path = "./bin" }
+]
+
 remappings = [
   "forge-std=lib/forge-std/src",
   "@openzeppelin/contracts=lib/openzeppelin-contracts/contracts",
